@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "sizes": ["XS", "S", "M"],
+      "img": "https://imageseu.urbndata.com/is/image/UrbanOutfittersEU/0130657780200_030_e?$medium$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+      "name": "Button-Down Midi Dress",
+      "price": 47.0,
+      "category": "female"
+    },
+    {
+      "id": 2,
+      "sizes": ["S", "M", "L"],
+      "img": "https://imageseu.urbndata.com/is/image/UrbanOutfittersEU/0130657780440_066_d?$medium$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+      "name": "Babydoll Mini Dress",
+      "price": 36.0,
+      "category": "female"
+    },
+    {
+      "id": 3,
+      "sizes": ["M", "L", "XL"],
+      "img": "https://imageseu.urbndata.com/is/image/UrbanOutfittersEU/0123593370282_020_d?$medium$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+      "name": "Linen Cargo Pants",
+      "price": 65.0,
+      "category": "female"
+    },
+    {
+      "id": 4,
+      "sizes": ["M"],
+      "img": "https://imageseu.urbndata.com/is/image/UrbanOutfittersEU/0180478120102_041_d?$medium$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+      "name": "Navy Jungle Pants",
+      "price": 95.0,
+      "category": "female"
+    },
+    {
+      "id": 5,
+      "sizes": ["L", "XL", "XXL"],
+      "img": "https://imageseu.urbndata.com/is/image/UrbanOutfittersEU/0225617930012_036_d?$medium$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+      "name": "Cargo Shorts",
+      "price": 45.0,
+      "category": "male"
+    },
+    {
+      "id": 6,
+      "sizes": ["L", "XL", "XXL"],
+      "img": "https://imageseu.urbndata.com/is/image/UrbanOutfittersEU/0216345040055_004_d?$medium$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+      "name": "Grey Zip-Through Track Top",
+      "price": 65.0,
+      "category": "male"
+    },
+    {
+      "id": 7,
+      "sizes": ["M", "L", "XL", "XXL"],
+      "img": "https://imageseu.urbndata.com/is/image/UrbanOutfittersEU/0215617930198_001_d?$medium$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+      "name": "Black Crinkle Stripe Short Sleeve Shirt",
+      "price": 39.0,
+      "category": "male"
+    }
+  ]
+}
