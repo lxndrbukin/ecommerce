@@ -15,10 +15,9 @@ export default function Catalog() {
   }, [dispatch]);
 
   let content;
-  let renderedItems;
 
   if (catalog.data.length) {
-    renderedItems = catalog.data
+    content = catalog.data
       .filter((item) => {
         if (filter.sizes.length) {
           return filter.sizes.some((size) => item.sizes.includes(size));
@@ -38,7 +37,6 @@ export default function Catalog() {
           />
         );
       });
-    content = <div className='catalog-items'>{renderedItems}</div>;
   } else {
     content = <Spinner />;
   }
@@ -47,7 +45,7 @@ export default function Catalog() {
     <section className='catalog'>
       <div className='catalog-header'>{content.length} product(s) found</div>
       <Filter />
-      {content}
+      <div className='catalog-items'>{content}</div>
     </section>
   );
 }

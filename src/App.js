@@ -1,9 +1,13 @@
+import Header from './components/Header';
 import Catalog from './components/Catalog';
 
 export default function App() {
   return (
-    <main>
-      <Catalog />
-    </main>
+    <div className='container'>
+      <Header />
+      <main>
+        <Catalog />
+      </main>
+    </div>
   );
 }
