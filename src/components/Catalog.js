@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import CatalogItem from './CatalogItem';
+import Filter from './FIlter';
 
 export default function Catalog() {
   const { data } = useSelector((state) => state.catalog);
@@ -17,5 +18,10 @@ export default function Catalog() {
     );
   });
 
-  return <section className='catalog'>{renderedItems}</section>;
+  return (
+    <section className='catalog'>
+      <Filter />
+      <div className='catalog-items'>{renderedItems}</div>
+    </section>
+  );
 }

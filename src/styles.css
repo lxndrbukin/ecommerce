@@ -22,7 +22,7 @@ main {
 }
 
 /* CATALOG */
-.catalog {
+.catalog-items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: var(--spacing-lg);
