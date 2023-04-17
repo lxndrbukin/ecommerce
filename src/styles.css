@@ -19,19 +19,21 @@ main {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
+  margin-top: calc(var(--spacing-lg) * 4);
 }
 
 /* CATALOG */
 .catalog {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .catalog-items {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
   grid-gap: var(--spacing-lg);
 }
 
@@ -90,4 +92,26 @@ main {
 .filter-btn.active {
   background-color: var(--black);
   color: var(--white);
+}
+
+/* SPINNER */
+.spinner {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid lightgrey;
+  border-top-color: var(--black);
+  animation: spin 1.2s infinite;
+}
+
+
+/* ANIMATIONS */
+/* --- spin --- */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import catalogReducer from './slices/catalogSlice';
-import filterReducer from './slices/fliterSlice';
+import filterReducer from './slices/filterSlice';
 
 export const store = configureStore({
   reducer: {
@@ -9,4 +9,5 @@ export const store = configureStore({
   },
 });
 
-export * from './slices/fliterSlice';
+export * from './slices/filterSlice';
+export * from './thunks/fetchItems';

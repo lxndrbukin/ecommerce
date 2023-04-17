@@ -1,10 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
-import catalog from '../../static/catalog.json';
+import { fetchItems } from '../thunks/fetchItems';
 
 const catalogSlice = createSlice({
   name: 'catalog',
   initialState: {
-    data: catalog.data,
+    data: [],
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchItems.fulfilled, (state, action) => {
+      state.data = action.payload;
+    });
   },
 });
 
