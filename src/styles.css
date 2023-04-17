@@ -17,11 +17,18 @@ body {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
 }
 
 /* CATALOG */
+.catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .catalog-items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -63,4 +70,24 @@ main {
 .item .item-add:hover {
   cursor: pointer;
   background-color: var(--yellow);
+}
+
+/* FILTER */
+.filter-btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+}
+
+.filter-btn:hover {
+  border-color: var(--black);
+}
+
+.filter-btn.active {
+  background-color: var(--black);
+  color: var(--white);
 }
