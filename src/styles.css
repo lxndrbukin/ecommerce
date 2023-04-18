@@ -67,6 +67,7 @@ main {
   display: grid;
   grid-template-columns: repeat(4, minmax(250px, 1fr));
   grid-gap: var(--spacing-lg);
+  width: 100%;
 }
 
 .item {
@@ -137,6 +138,29 @@ main {
   flex-direction: column;
 }
 
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon i {
+  font-size: 1.4rem;
+}
+
+.cart-icon span {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  padding: var(--spacing-xs);
+  background-color: var(--yellow);
+  height: 16px;
+  width: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
 .cart-content {
   padding: var(--spacing-md);
   min-height: 200px;
@@ -174,13 +198,13 @@ main {
 
 .cart-item-name {
   font-size: 1.1rem;
-
 }
 
 .cart-item-settings {
   padding: var(--spacing-sm);
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .cart-item-price {

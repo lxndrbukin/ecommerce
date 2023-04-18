@@ -9,8 +9,10 @@ export default function CartItem({ name, quantity, price, img }) {
         <div className='cart-item-quantity'>Quantity: {quantity}</div>
       </div>
       <div className='cart-item-settings'>
-        <div className='cart-item-price'>
-          £{price * quantity}
+        <div className='cart-item-price'>£{price * quantity}</div>
+        <div className='cart-item-btns'>
+          <input type='button' value='-' />
+          <input type='button' value='+' />
         </div>
       </div>
     </div>

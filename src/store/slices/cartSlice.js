@@ -23,7 +23,32 @@ const cartSlice = createSlice({
         state.items = updatedArray;
       }
     },
-    
+    increment: (state, action) => {
+      const updatedArray = state.items.map((item) => {
+        if (item.name === action.payload.name) {
+          return {
+            ...item,
+            quantity: item.quantity + 1,
+          };
+        } else {
+          return item;
+        }
+      });
+      state.items = updatedArray;
+    },
+    decrement: (state, action) => {
+      const updatedArray = state.items.map((item) => {
+        if (item.name === action.payload.name && item.quantity > 1) {
+          return {
+            ...item,
+            quantity: item.quantity - 1,
+          };
+        } else {
+          return item;
+        }
+      });
+      state.items = updatedArray;
+    },
   },
 });
 
