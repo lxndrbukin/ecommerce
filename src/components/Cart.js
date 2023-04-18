@@ -4,6 +4,11 @@ import CartItem from './CartItem';
 export default function Cart() {
   const { items } = useSelector((state) => state.cart);
 
+  let sum = 0;
+  items.forEach((item) => {
+    sum += item.price * item.quantity;
+  });
+
   let content;
 
   if (items.length) {
@@ -22,5 +27,10 @@ export default function Cart() {
     content = 'Empty';
   }
 
-  return <div className='cart-content'>{content}</div>;
+  return (
+    <div className='cart-content'>
+      {content}
+      <div className='cart-total'>Total amount: £{sum}</div>
+    </div>
+  );
 }
