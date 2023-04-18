@@ -11,7 +11,7 @@ const cartSlice = createSlice({
         state.items.push({ ...action.payload, quantity: 1 });
       } else {
         const updatedArray = state.items.map((item) => {
-          if (state.items.some((item) => item.name === action.payload.name)) {
+          if (item.name === action.payload.name) {
             return { ...item, quantity: item.quantity + 1 };
           } else {
             return item;

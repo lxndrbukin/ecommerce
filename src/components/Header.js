@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
+import Cart from './Cart';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,7 @@ export default function Header() {
           onClick={() => setIsOpen(!isOpen)}
           className='fas fa-shopping-cart'
         ></i>
-        {isOpen && <div className='cart-content'></div>}
+        {isOpen && <Cart />}
       </div>
     </header>
   );
