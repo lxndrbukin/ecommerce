@@ -20,6 +20,7 @@ export default function Cart() {
           price={item.price}
           img={item.img}
           quantity={item.quantity}
+          size={item.size}
         />
       );
     });

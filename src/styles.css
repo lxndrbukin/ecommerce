@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 :root {
   --black: #000;
   --white: #fff;
@@ -12,6 +14,7 @@
 /* BODY */
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -25,18 +28,13 @@ body {
 .header {
   width: 100%;
   max-width: var(--standard-width);
+  height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,22 +79,28 @@ main {
   cursor: pointer;
 }
 
-.item .item-img {
+.item-img {
   width: 100%;
   height: 300px;
 }
 
-.item .item-name {
-  font-size: 1.05rem;
+.item-name {
+  margin: var(--spacing-md) 0;
 }
 
-.item .item-img img {
+.item-price {
+  margin: var(--spacing-md) 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.item-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.item .item-add {
+.item-add {
   background-color: var(--black);
   color: var(--white);
   border: none;
@@ -106,9 +110,17 @@ main {
   width: 100%;
 }
 
-.item .item-add:hover {
+.item-add:hover {
   cursor: pointer;
   background-color: var(--yellow);
+}
+
+.item-sizes select {
+  width: 50px;
+}
+
+.item-sizes select:focus {
+  outline: none;
 }
 
 /* FILTER */
@@ -136,6 +148,8 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cart-icon {
@@ -171,6 +185,7 @@ main {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 50px;
+  right: 0;
   display: flex;
   flex-direction: column;
 }
