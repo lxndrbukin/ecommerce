@@ -27,7 +27,10 @@ export default function Header() {
 
   return (
     <header className='header'>
-      <div className='logo'>LOGO</div>
+      <div className='logo'>
+        <i className='fas fa-shopping-bag'></i>
+        <span>Shoppingly</span>
+      </div>
       <div ref={ref} className='cart'>
         <div onClick={() => setIsOpen(!isOpen)} className='cart-icon'>
           <i className='fas fa-shopping-cart'></i>

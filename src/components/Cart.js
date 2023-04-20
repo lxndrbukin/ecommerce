@@ -13,25 +13,20 @@ export default function Cart() {
 
   if (items.length) {
     content = items.map((item) => {
-      return (
-        <CartItem
-          key={item.name}
-          name={item.name}
-          price={item.price}
-          img={item.img}
-          quantity={item.quantity}
-          size={item.size}
-        />
-      );
+      return <CartItem key={item.id} item={item} />;
     });
   } else {
-    content = 'Empty';
+    content = null;
   }
 
   return (
-    <div className='cart-content'>
-      {content}
-      <div className='cart-total'>Total amount: £{sum}</div>
+    <div className='cart-wrapper'>
+      <div className='cart-content-wrapper'>
+        <div className='cart-content'>{content}</div>
+        {(content && (
+          <div className='cart-total'>Total amount: £{sum}</div>
+        )) || <span className='cart-empty'>Empty</span>}
+      </div>
     </div>
   );
 }

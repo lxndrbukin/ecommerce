@@ -21,5 +21,10 @@ export default function Filter() {
       />
     );
   });
-  return <div className='filter'>{renderedSizeBtns}</div>;
+  return (
+    <div className='filter'>
+      <h4 className='filter-header'>Sizes:</h4>
+      <div className='filter-btns'>{renderedSizeBtns}</div>
+    </div>
+  );
 }
