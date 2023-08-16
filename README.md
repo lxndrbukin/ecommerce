@@ -10,3 +10,4 @@
   <li>Selecting the size of an item</li>
   <li>Adding the item to your shopping cart</li>
 </ul>
+Visit <a href='https://lxndrbukin.github.io/shoppingly/'>Shoppingly</a>
