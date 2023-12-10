@@ -17,7 +17,7 @@ export default function Catalog() {
   let content;
 
   if (catalog.data.length) {
-    content = catalog.data
+    const data = catalog.data
       .filter((item) => {
         if (filter.sizes.length) {
           return filter.sizes.some((size) => item.sizes.includes(size));
@@ -37,15 +37,16 @@ export default function Catalog() {
           />
         );
       });
+    content = <div className="catalog-items">{data}</div>;
   } else {
     content = <Spinner />;
   }
 
   return (
-    <section className='catalog'>
-      <div className='catalog-header'>{content.length} product(s) found</div>
+    <section className="catalog">
+      <div className="catalog-header">{content.length} product(s) found</div>
       <Filter />
-      <div className='catalog-items'>{content}</div>
+      <Spinner />
     </section>
   );
 }
