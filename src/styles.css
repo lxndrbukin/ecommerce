@@ -39,10 +39,9 @@ html {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  height: 100vh;
 }
 
 /* HEADER */
@@ -55,6 +54,7 @@ html {
   justify-content: space-between;
   padding: var(--spacing-md);
   box-sizing: border-box;
+  justify-self: center;
 }
 
 .logo {
@@ -77,22 +77,23 @@ html {
 /* MAIN */
 main {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
-  min-height: 100vh;
   margin-top: calc(var(--spacing-lg) * 4);
   width: 100%;
   max-width: var(--standard-width);
+  justify-self: center;
 }
 
 /* CATALOG */
 .catalog {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content min-content 1fr;
+  height: 100%;
   width: 100%;
+}
+
+.catalog-header {
+  justify-self: center;
 }
 
 .catalog-items {
@@ -363,6 +364,8 @@ main {
   border: 5px solid lightgrey;
   border-top-color: var(--black);
   animation: spin 1.2s infinite;
+  align-self: center;
+  justify-self: center;
 }
 
 /* ANIMATIONS */

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchItems } from '../store';
 import Spinner from '../static/Spinner';
 import CatalogItem from './CatalogItem';
-import Filter from './FIlter';
+import Filter from './Filter';
 
 export default function Catalog() {
   const { catalog, filter } = useSelector((state) => state);
@@ -44,9 +44,11 @@ export default function Catalog() {
 
   return (
     <section className="catalog">
-      <div className="catalog-header">{content.length} product(s) found</div>
+      <div className="catalog-header">
+        {content.length || 0} product(s) found
+      </div>
       <Filter />
-      <Spinner />
+      {content}
     </section>
   );
 }
