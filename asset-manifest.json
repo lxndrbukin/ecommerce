@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/shoppingly/static/css/main.0ec7e529.css",
-    "main.js": "/shoppingly/static/js/main.d4204a86.js",
+    "main.css": "/shoppingly/static/css/main.f755fad2.css",
+    "main.js": "/shoppingly/static/js/main.466682e0.js",
     "index.html": "/shoppingly/index.html",
-    "main.0ec7e529.css.map": "/shoppingly/static/css/main.0ec7e529.css.map",
-    "main.d4204a86.js.map": "/shoppingly/static/js/main.d4204a86.js.map"
+    "main.f755fad2.css.map": "/shoppingly/static/css/main.f755fad2.css.map",
+    "main.466682e0.js.map": "/shoppingly/static/js/main.466682e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ec7e529.css",
-    "static/js/main.d4204a86.js"
+    "static/css/main.f755fad2.css",
+    "static/js/main.466682e0.js"
   ]
 }
