@@ -37,16 +37,14 @@ export default function Catalog() {
           />
         );
       });
-    content = <div className="catalog-items">{data}</div>;
+    content = <div className='catalog-items'>{data}</div>;
   } else {
     content = <Spinner />;
   }
 
   return (
-    <section className="catalog">
-      <div className="catalog-header">
-        {content.length || 0} product(s) found
-      </div>
+    <section className='catalog'>
+      <div className='catalog-header'>{content.length} product(s) found</div>
       <Filter />
       {content}
     </section>
